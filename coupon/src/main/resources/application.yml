@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.56.10:3306/mall_sms?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: root
+
+mybatis-plus:
+  mapper-location: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
