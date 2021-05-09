@@ -12,7 +12,7 @@ import lombok.Data;
  * 
  * @author yolanda
  * @email yolanda@gmail.com
- * @date 2021-05-09 17:51:40
+ * @date 2021-05-09 20:55:53
  */
 @Data
 @TableName("sms_coupon_spu_category_relation")

@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  * 
  * @author yolanda
  * @email yolanda@gmail.com
- * @date 2021-05-09 19:28:00
+ * @date 2021-05-09 20:56:50
  */
 @Mapper
 public interface GrowthChangeHistoryDao extends BaseMapper<GrowthChangeHistoryEntity> {

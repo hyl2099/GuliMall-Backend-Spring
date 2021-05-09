@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  * 
  * @author yolanda
  * @email yolanda@gmail.com
- * @date 2021-05-09 17:51:40
+ * @date 2021-05-09 20:55:53
  */
 @Mapper
 public interface UmsMemberCollectSubjectDao extends BaseMapper<UmsMemberCollectSubjectEntity> {
