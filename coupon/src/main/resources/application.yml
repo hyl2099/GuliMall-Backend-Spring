@@ -4,6 +4,10 @@ spring:
     url: jdbc:mysql://192.168.56.10:3306/mall_sms?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false
     username: root
     password: root
+  cloud:
+    nacos:
+        discovery:
+          server-addr: 127.0.0.1:8848
 
 mybatis-plus:
   mapper-location: classpath*:/mapper/**/*.xml
@@ -11,4 +15,4 @@ mybatis-plus:
     db-config:
       id-type: auto
 server:
-  port:7000
+  port: 7000
