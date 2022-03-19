@@ -1,6 +1,7 @@
 package com.mall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 
@@ -25,6 +26,7 @@ import com.mall.common.utils.R;
  * @email yolanda@gmail.com
  * @date 2021-05-08 15:37:38
  */
+
 @RestController
 @RequestMapping("product/category")
 public class CategoryController {
@@ -32,13 +34,12 @@ public class CategoryController {
     private CategoryService categoryService;
 
     /**
-     * 列表
+     * 查出所有分类以及子分类，以树形结构组装起来
      */
-    @RequestMapping("/list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
-
-        return R.ok().put("page", page);
+    @RequestMapping("/list/tree")
+    public R list(){
+        List<CategoryEntity> entities = categoryService.listWithTree();
+        return R.ok().put("page", entities);
     }
 
 
