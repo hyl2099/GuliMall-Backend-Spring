@@ -14,7 +14,7 @@ import java.util.Map;
  * @date 2021-05-08 14:31:16
  */
 public interface BrandService extends IService<BrandEntity> {
-
+    //    分页查询
     PageUtils queryPage(Map<String, Object> params);
 }
 

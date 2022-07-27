@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /*
 1,整合mybatis-Plus
-    1）带入依赖
+    1）导入依赖
     2）配置，参照mybatis-Plus官方文档
         1,配置属数据源，
             导入数据库驱动
